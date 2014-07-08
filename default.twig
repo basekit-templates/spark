@@ -1,0 +1,51 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+<header class="bk-header clearfix">
+    <div class="header-bg">
+         <div class="wrapper companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            <div class="header-profilephone">
+                {% if profile.phone|length > 0 %}  
+                   {{widget('clicktocall', 'headerclicktocall', {})|raw}}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="wrapper clearfix">
+            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+            <div class="welcome-text">
+                {{widget('content', 'headercontent1', {"content":"<h3>Lorem Ipsum - Alam Thor</h3>"})|raw}}  
+            </div>  
+        </div>
+    </nav>
+</header>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>  
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1content1', {"content":"<h3>Aliquam Sodales</h3>"})|raw}}
+                {{widget('profile', 'footercolumn1profileemail', { 'profileType':'email', 'email':'profile'})|raw}}
+                {{widget('profile', 'footercolumn1profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'footercolumn2content1', {"content":"<h3>Lorem Upsum</h3>"})|raw}}
+                {{widget('content', 'footercolumn2content2', {"content":"<p>Quas, inventore, explicabo, deserunt, similique alias ducimus ullam aliquam eaque delectus saepe vitae corporis minima cum atque.</p>"})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}
