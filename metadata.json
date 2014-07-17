@@ -1,7 +1,7 @@
 {
-	"name":"ProSkip",
-	"thumbnail":"proskip.png",
-	"screenshot":"proskip.png",
+	"name":"Spark",
+	"thumbnail":"spark.png",
+	"screenshot":"spark.png",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
