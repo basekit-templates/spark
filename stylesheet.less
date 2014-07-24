@@ -1153,7 +1153,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 }
 
 .bk-footer .widget.profile .bk-profile-socialicons span a {
-  background-color: fade(@color-swatch5, 20%);
+  background-color: transparent;
 }
 
 .widget.profile .bk-profile-socialicons span a {
@@ -1258,6 +1258,8 @@ textarea {
             @media @mobile {
               left: 0;
               margin-left: 0;
+              margin-top: 10px;
+              width: 100%;
             }
         }
         input {
@@ -1794,10 +1796,47 @@ textarea {
 
     /* TWITTER */
 
-    .widget.twitter ul li {
-        padding-bottom: 20px;
+    .widget.twitter {
+      img {
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+      }
+      p
+      .twitter-profile-pic, .twitter-content {
+        display: inline-block;
+      }
+      .twitter-profile-pic {
+        @media @mobile {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+      .twitter-content {
+        float: left;
+        width: 85%;
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      span.bk-full-name, a, p a, span, a .bk-full-name {
+        color: @font-swatch3-color;
+        font-family: @font-swatch3-font-family;
+        font-size: @font-swatch3-font-size;
+        font-weight: @font-swatch3-font-weight;
+        line-height: @font-swatch3-line-height;
+      }
+      time, span, span a {
+        color: @color-swatch3;
+        font-family: @font-swatch5-font-family;
+        font-size: bkscale(@font-swatch5-font-size, 0.9);
+        font-weight: @font-swatch5-font-weight;
+        line-height: @font-swatch5-line-height;
+      }
+      time {
+        display: none;
+      }
     }
-
     /* GALLERY */
 
     .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
