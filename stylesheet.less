@@ -627,7 +627,7 @@ footer.bk-footer {
 }
 
 hr.line {
-   background-color: lighten(@color-swatch5,35%);
+   background-color: lighten(@color-swatch5, 60%);
    height: 1px;
    width: 100%;
    border: none;
@@ -1153,6 +1153,10 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
   display: inline-block;
 }
 
+.bk-footer .widget.profile .bk-profile-socialicons span a {
+  background-color: fade(@color-swatch7, 20%);
+}
+
 .widget.profile .bk-profile-socialicons span a {
   background-color: lighten(@color-swatch2, 10%);
 }
@@ -1162,6 +1166,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 input, textarea {
   background-color: lighten(@color-swatch5, 75%);
   border: 1px solid lighten(@color-swatch5, 70%);
+  padding: 0 5px;
   text-indent: 8px;
   -webkit-appearance: none;
   &:hover, &:focus {
@@ -1186,6 +1191,10 @@ input.blog-search-input, .widget.signupform input, .widget.profile form fieldset
 }
 
 button.blog-search-submit-button, .widget.signupform button, .widget.profile button {
+}
+
+.widget.paypalbuynow .widget.button.paypal {
+  padding: 0 10px 0 40px;
 }
 
 .widget.paypalbuynow .widget.button.paypal:hover {
