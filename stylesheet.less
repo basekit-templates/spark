@@ -660,7 +660,6 @@ hr.line.align-right {
 }
 
 .widget.twitter .twitter-content {
-    padding: 0 20px 20px;
     margin: 0;
 }
 
@@ -675,6 +674,10 @@ hr.line.align-right {
   color: @color-swatch2;
   padding-bottom: 4px;
   letter-spacing: 0.05em;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    line-height:60px;
 }
 
 
@@ -865,6 +868,14 @@ hr.line.align-right {
 .widget.socialicons span a:hover, .widget.profile 
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch2,2%);
+}
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+  min-height:32px;
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
 }
 
 /* 9. Ecommerce */
